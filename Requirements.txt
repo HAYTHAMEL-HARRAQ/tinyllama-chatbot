@@ -1,0 +1,7 @@
+Requirements
+transformers
+torch
+gradio
+accelerate
+# Optional for voice input:
+speechrecognition
