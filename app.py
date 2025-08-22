@@ -14,8 +14,8 @@ except ImportError:
 
 # --- Model and Author Info ---
 MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-AUTHOR = "Your Name"
-GITHUB = "https://github.com/yourusername/tinyllama-chatbot"
+AUTHOR = "HAYTHAM EL-HARRAQ"
+GITHUB = "https://github.com/HAYTHAMEL-HARRAQ/tinyllama-chatbot"
 HF_LINK = "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 # --- Prompt Templates ---
@@ -112,7 +112,7 @@ def show_about():
     return f"""
 **TinyLlama Chatbot**  
 Model: [{MODEL_NAME}]({HF_LINK})  
-Author: [{AUTHOR}](https://github.com/yourusername)  
+Author: [{AUTHOR}](https://github.com/HAYTHAMEL-HARRAQ)  
 [GitHub Repo]({GITHUB})
 
 Built with [Transformers](https://huggingface.co/docs/transformers/index), [Gradio](https://gradio.app/), and [TinyLlama](https://huggingface.co/TinyLlama).
@@ -121,7 +121,7 @@ Built with [Transformers](https://huggingface.co/docs/transformers/index), [Grad
 # --- Gradio UI ---
 with gr.Blocks() as demo:
     gr.Markdown("# 🦙 TinyLlama Chatbot")
-    gr.Markdown("A privacy-friendly, local LLM chatbot with extra features. [GitHub Repo](https://github.com/yourusername/tinyllama-chatbot)")
+    gr.Markdown("A privacy-friendly, local LLM chatbot with extra features. [GitHub Repo](https://github.com/HAYTHAMEL-HARRAQ/tinyllama-chatbot)")
 
     with gr.Row():
         system_prompt = gr.Dropdown(
